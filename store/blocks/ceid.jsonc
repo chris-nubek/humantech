@@ -1,0 +1,102 @@
+{
+  "store.custom#ceid": {
+    "blocks": [
+      "list-context.image-list#CEID",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      /*"flex-layout.row#deals",
+      /*"rich-text#shelf-title",
+      "flex-layout.row#shelf",*/
+      "info-card#home",
+      "rich-text#question",
+      "rich-text#link",
+      "newsletter"
+    ]
+  },
+  "list-context.image-list#CEID": {
+    "children": [
+      "slider-layout#demo-images"
+    ],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://humantech.s3.amazonaws.com/banner/banner-principal-CEID.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## lo mas vendido!",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": [
+      "list-context.product-list#demo1"
+    ]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "info-card#cita": {
+    "props": {
+      "id": "info-card-cita",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://humantech.s3.amazonaws.com/banner/info-card-movil.jpg",
+      "headline": "Conoce nuestro centro",
+      "callToActionText": "cita",
+      "callToActionUrl": "/",
+      "blockClass": "info-card-cita",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#question": {
+    "props": {
+      "text": "**Aqui podemos agregar texto.\no cualquier otra cosa con imagenes como categorías**",
+      "blockClass": "question"
+    }
+  },
+  "rich-text#link": {
+    "props": {
+      "text": "\n**mas texto o cards**\nigual aqui",
+      "blockClass": "link"
+    }
+  }
+}

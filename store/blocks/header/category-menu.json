@@ -1,0 +1,399 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#centro-de-experiencia",
+      "menu-item#apps",
+      "menu-item#academy",
+      "menu-item#store",
+      "menu-item#corporate"
+
+
+
+    ]
+  },
+
+  "menu-item#centro-de-experiencia": {
+    "props": {
+      "id": "menu-item-centro-de-experiencia",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ceid",
+        "noFollow": false,
+        "tagTitle": "Centro de Experiencia",
+        "text": "Centro de Experiencia"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#centro-de-experiencia"
+    ]
+  },
+  "vtex.menu@2.x:submenu#centro-de-experiencia": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#centro-de-experiencia"
+    ]
+  },
+  "vtex.menu@2.x:menu#centro-de-experiencia": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-centro-de-experiencia-agenda-cita",
+      "menu-item#category-centro-de-experiencia-tour-online"
+
+    ]
+  },
+  "menu-item#category-centro-de-experiencia-agenda-cita": {
+    "props": {
+      "id": "menu-item-category-centro-de-experiencia-agenda-cita",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ceid",
+        "noFollow": false,
+        "tagTitle": "Agenda una cita",
+        "text": "Agenda una Cita"
+      }
+    }
+  },
+  "menu-item#category-centro-de-experiencia-tour-online": {
+    "props": {
+      "id": "category-centro-de-experiencia-tour-online",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ceid",
+        "noFollow": false,
+        "tagTitle": "Tour Online",
+        "text": "Tour Online"
+      }
+    }
+  },
+
+
+  "menu-item#apps": {
+    "props": {
+      "id": "menu-item-apps",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apps",
+        "noFollow": false,
+        "tagTitle": "Apps",
+        "text": "Apps"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#apps"
+    ]
+  },
+  "vtex.menu@2.x:submenu#apps": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-apps"
+    ]
+  },
+  "flex-layout.row#menu-apps": {
+    "children": [
+      "flex-layout.col#menu-apps-1",
+      "flex-layout.col#menu-apps-2",
+      "flex-layout.col#menu-apps-3"
+    ]
+  },
+  "flex-layout.col#menu-apps-1": {
+    "children": [
+      "info-card#go"
+    ]
+  },
+  "flex-layout.col#menu-apps-2": {
+    "children": [
+      "info-card#racing"
+    ]
+  },
+  "flex-layout.col#menu-apps-3": {
+    "children": [
+      "info-card#addmap"
+    ]
+  },
+  "info-card#go": {
+    "props": {
+      "id": "info-card-go",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+
+      "callToActionText": "mas...",
+      "callToActionUrl": "/cencel-go",
+      "blockClass": "info-card-go",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#racing": {
+    "props": {
+      "id": "info-card-racing",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "mas...",
+      "callToActionUrl": "/salesracing",
+      "blockClass": "info-card-racing",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#addmap": {
+    "props": {
+      "id": "info-card-addmap",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "richText":"addMap",
+      "callToActionText": "mas...",
+      "callToActionUrl": "/admapp",
+      "blockClass": "info-card-addmap",
+      "textAlignment": "center"
+    }
+  },
+
+
+
+
+  "menu-item#academy": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Academy",
+        "text": "Academy"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#academy"
+    ]
+  },
+  "vtex.menu@2.x:submenu#academy": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-academy"
+    ]
+  },
+  "flex-layout.row#menu-academy": {
+    "children": [
+      "flex-layout.col#menu-academy-1",
+      "flex-layout.col#menu-academy-2"
+    ]
+  },
+  "flex-layout.col#menu-academy-1": {
+    "children": [
+      "vtex.menu@2.x:menu#academy"
+    ]
+  },
+  "flex-layout.col#menu-academy-2": {
+    "children": [
+      "info-card#menu-academy"
+    ]
+  },
+
+  "info-card#menu-academy": {
+    "props": {
+      "id": "info-card-menu-academy",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "ir",
+      "callToActionUrl": "/academy",
+      "blockClass": "info-card-menu-academy",
+      "textAlignment": "center"
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#academy": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#seguridad",
+      "menu-item#productividad",
+      "menu-item#salud",
+      "menu-item#iot",
+      "menu-item#movil",
+      "menu-item#ciencia",
+      "menu-item#estilo-vida"
+    ]
+  },
+  "menu-item#seguridad": {
+    "props": {
+      "id": "menu-item-seguridad",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/academy",
+        "noFollow": true,
+        "tagTitle": "seguridad",
+        "text": "Seguridad"
+      }
+    }
+  },
+  "menu-item#productividad": {
+    "props": {
+      "id": "menu-item-productividad",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/academy",
+        "noFollow": true,
+        "tagTitle": "productividad",
+        "text": "Productividad"
+      }
+    }
+  },
+  "menu-item#salud": {
+    "props": {
+      "id": "menu-item-salud",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/salud",
+        "noFollow": true,
+        "tagTitle": "salud",
+        "text": "Salud"
+      }
+    }
+  },
+  "menu-item#estilo-vida": {
+    "props": {
+      "id": "menu-item-estilo-vida",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/academy",
+        "noFollow": true,
+        "tagTitle": "estilo de vida",
+        "text": "Estilo de Vida"
+      }
+    }
+  },
+  "menu-item#iot": {
+    "props": {
+      "id": "menu-item-iot",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/academy",
+        "noFollow": true,
+        "tagTitle": "iot",
+        "text": "Internet de las cosas"
+      }
+    }
+  },
+  "menu-item#movil": {
+    "props": {
+      "id": "menu-item-movil",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/academy",
+        "noFollow": true,
+        "tagTitle": "movil",
+        "text": "Móvil"
+      }
+    }
+  },
+  "menu-item#ciencia": {
+    "props": {
+      "id": "menu-item-ciencia",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/academy",
+        "noFollow": true,
+        "tagTitle": "ciencia",
+        "text": "Ciencia"
+      }
+    }
+  },
+  "menu-item#store": {
+    "props": {
+      "id": "menu-item-store",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/store",
+        "noFollow": false,
+        "tagTitle": "Comprar",
+        "text": "Comprar"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#store"
+    ]
+  },
+  "vtex.menu@2.x:submenu#store": {
+    "children":[
+      "category-menu"
+    ],
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": false,
+      "menuDisposition": "center",
+
+      "width": "100%"
+    }
+  },
+  "menu-item#corporate": {
+    "props": {
+      "id": "menu-item-corporate",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/corporate",
+        "noFollow": false,
+        "tagTitle": "Corporate",
+        "text": "Corporate"
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,142 @@
+{
+  "store.custom#store": {
+    "blocks": [
+      "list-context.image-list#store",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      // "flex-layout.row#deals",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#shelf-down",
+      "info-card#home",
+      "rich-text#question",
+      "rich-text#link",
+      "newsletter"
+    ]
+  },
+  "list-context.image-list#store": {
+    "children": [
+      "slider-layout#store"
+    ],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://humantech.s3.amazonaws.com/banner/Captura+de+Pantalla+2021-04-22+a+la(s)+11.46.54.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://humantech.s3.amazonaws.com/banner/Captura+de+Pantalla+2021-04-22+a+la(s)+11.46.38.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://humantech.s3.amazonaws.com/banner/Captura+de+Pantalla+2021-04-22+a+la(s)+11.46.19.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#store": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## lo mas vendido!",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": [
+      "list-context.product-list#demo1"
+    ]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "info-card#store": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://humantech.s3.amazonaws.com/banner/info-card-movil.jpg",
+      "headline": "Estilo de Vida",
+      "callToActionText": "EXPLORA",
+      "callToActionUrl": "/gadgets/",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#question": {
+    "props": {
+      "text": "**Aqui podemos agregar texto.\no cualquier otra cosa con imagenes como categorías**",
+      "blockClass": "question"
+    }
+  },
+  "rich-text#link": {
+    "props": {
+      "text": "\n**mas texto o cards**\nigual aqui",
+      "blockClass": "link"
+    }
+
+
+    //seccion gris
+  },
+  "flex-layout.row#shelf-down": {
+    "children": [
+      "list-context.product-list#grey"
+    ]
+  },
+  "list-context.product-list#grey": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products-grey"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products-grey": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+}

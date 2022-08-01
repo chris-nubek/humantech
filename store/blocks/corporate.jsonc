@@ -1,0 +1,173 @@
+{
+  "store.custom#corporate": {
+    "blocks": [
+      "list-context.image-list#corporate",
+
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      //"flex-layout.row#deals",
+     "rich-text#filosofia",
+      "rich-text#filosofia2",
+      //"flex-layout.row#shelf",
+      "info-card#corporate-consultoria",
+      "info-card#corporate-formacion",
+      "info-card#corporate-liderazgo",
+      "rich-text#Nosotros",
+      "rich-text#Nosotros-desc",
+      "rich-text#Nosotros-desc1",
+      "rich-text#Nosotros-desc2",
+      "rich-text#Nosotros-desc3",
+      "rich-text#question",
+      "rich-text#link",
+      "newsletter"
+    ]
+  },
+  "list-context.image-list#corporate": {
+    "children": [
+      "slider-layout#demo-images"
+    ],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://humantech.s3.amazonaws.com/banner/banner-corporate.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  "rich-text#filosofia": {
+    "props": {
+      "text": "## HumanTech Corporate",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#filosofia2": {
+    "props": {
+      "text": "#### Nuestra filosofía se basa en tres engranajes escenciales, lo que hace que una empresa entregue resultados excepcionales",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": [
+      "list-context.product-list#demo1"
+    ]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "info-card#corporate-consultoria": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://humantech.s3.amazonaws.com/corporate/a%CC%82%C2%80%C2%94Pngtreea%CC%82%C2%80%C2%94online+education+training+course+design_5331074.png",
+      "headline": "Consultoria de alto impacto",
+      "callToActionText": "mas detalles",
+      "callToActionUrl": "/corporate",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+    "info-card#corporate-formacion": {
+      "props": {
+        "id": "info-card-home",
+        "isFullModeStyle": false,
+        "textPosition": "left",
+        "imageUrl": "https://humantech.s3.amazonaws.com/corporate/a%CC%82%C2%80%C2%94Pngtreea%CC%82%C2%80%C2%94business+analysis+concept+with+characters_5335952.png",
+        "headline": "Formación de Desarrollo",
+        "callToActionText": "mas detalles",
+        "callToActionUrl": "/corporate",
+        "blockClass": "info-card-home",
+        "textAlignment": "center"
+      }
+    },
+  "info-card#corporate-liderazgo": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://humantech.s3.amazonaws.com/corporate/a%CC%82%C2%80%C2%94Pngtreea%CC%82%C2%80%C2%94online+education+training+course+design_5331074.png",
+      "headline": "Academia de Liderazgo",
+      "callToActionText": "mas detalles",
+      "callToActionUrl": "/corporate",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#Nosotros": {
+    "props": {
+      "text": "## Nosotros",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#Nosotros-desc": {
+    "props": {
+      "text": "#### Hemos capacitado a más de 12,500 personas alrededor del mundo.",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#Nosotros-desc1": {
+    "props": {
+      "text": "#### Creamos y actualizamos la estrategia organizacional (Scaling Up).",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#Nosotros-desc2": {
+    "props": {
+      "text": "#### Desarrollamos e implementamos estructuras, procesos y metodologías de ejecución probadas (4Dx, AGILE/SCRUM).",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#Nosotros-desc3": {
+    "props": {
+      "text": "#### Desarrollamos e implementamos nuevas formas de trabajar para la transformación de la cultura organizacional y el desarrollo del liderazgo",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#question": {
+    "props": {
+      "text": "**Aqui podemos agregar texto.\no cualquier otra cosa con imagenes como categorías**",
+      "blockClass": "question"
+    }
+  },
+  "rich-text#link": {
+    "props": {
+      "text": "\n**mas texto o cards**\nigual aqui",
+      "blockClass": "link"
+    }
+  }
+}

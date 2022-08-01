@@ -1,0 +1,39 @@
+{
+  "store.custom#about-us": {
+    "path": "/about-us"
+  },
+  "store.custom#faq": {
+    "path": "/faq"
+  },
+  "store.custom#contact-us": {
+    "path": "/contact-us"
+  },
+  "store.custom#academy": {
+    "path":"/academy"
+  },
+  "store.custom#ceid": {
+    "path": "/ceid"
+  },
+  "store.custom#store": {
+    "path": "/store"
+  },
+  "store.custom#coaching": {
+    "path": "/coaching"
+  },
+  "store.custom#cencel-go": {
+    "path": "/cencel-go"
+  },
+  "store.custom#salesracing": {
+    "path": "/salesracing"
+  },
+  "store.custom#admapp": {
+    "path": "/admapp"
+  },
+  "store.custom#apps": {
+    "path": "/apps"
+  },
+  "store.custom#corporate": {
+    "path": "/corporate"
+  }
+}
+
